@@ -36,7 +36,31 @@ headerItems: {
     p: {
         margin: '10px'
     }
+},
+themeSwitchIcon: {
+fontSize: '25px'
+},
+headerActions: {
+    display: 'flex',
+    alignItems: 'center',
+    margin: '10px'
+},
+themeSwitchContainer: {
+    display: 'flex',
+    backgroundColor: '#1C1C1E',
+    fontSize: '30px',
+    borderRadius: '50px',
+    padding: '15px',
+    alignItems: 'center',
+    justifyContent: 'center',
+    objectFit: 'contain'
+},
+loginButton: {
+    padding: '15px 40px',
+    borderRadius: '50px',
+    color: 'black'
 }
+ 
 
 }
 

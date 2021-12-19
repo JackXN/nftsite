@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
     <Head>
-      <title>Crypto Shit</title>
+      <title>Crypto Punks</title>
     </Head>
     <Box bg='black'>
     <Header/>
