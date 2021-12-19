@@ -7,24 +7,32 @@ import HeaderImg from '../../../public/assets/Header/cryptopunk-logo.png'
 
 
 // Icons
-import {BsSearch as Search} from 'react-icons/bs'
+import {BsSearch as SearchIcon} from 'react-icons/bs';
 
 // Styles 
-import styles from '../../../styles/Header/HeaderStyles'
+import styles from '../../../styles/Header/HeaderStyles';
 
-function Header() {
+function Header() { 
     return (
         <>  
-<Box sx={styles.container}>
-<Box sx={styles.leftContainer}>
-<Image src={HeaderImg} alt='header punks'/>
-</Box>
-<Box sx={styles.searchContainer}>
-    <Search style={{color: 'white'}}/> 
-<Input size='lg' placeholder='search punks' border='none'/>
-</Box>
-<Box sx={styles.searchContainerTwo}>
-</Box>
+<Box sx={styles.header}>
+    <Box sx={styles.logoContainer}>
+        <Image src={HeaderImg} alt='punks' sx={styles.punkLogo}/>
+    </Box>
+    <Box sx={styles.searchBar}>
+        <Box sx={styles.searchIconContainer}>
+            <SearchIcon/>
+        </Box>
+        <Input size='lg' placeholder='Search Punks' sx={styles.searchInput}/>
+    </Box>
+
+
+    <Box sx={styles.headerItems}>
+        <Text as='p'>Drops</Text>
+        <Text as='p'>MarketPlace</Text>
+        <Text as='p'>Create</Text>
+
+    </Box>
 </Box>
         </>
     )
