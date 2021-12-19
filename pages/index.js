@@ -1,5 +1,7 @@
 // Components
-import Head from 'next/head'
+import Head from 'next/head';
+import Header from '../components/containers/Header/Header';
+import {Box} from '@chakra-ui/react';
 
 
 
@@ -9,8 +11,10 @@ export default function Home() {
     <Head>
       <title>Crypto Shit</title>
     </Head>
+    <Box bg='black'>
+    <Header/>
     
-
+    </Box>
 
     </>
   )
