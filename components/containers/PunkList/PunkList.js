@@ -6,12 +6,12 @@ import CollectionCard from './CollectionCard';
 // Styles
 import styles from '../../../styles/PunkList/PunkListStyles';
 
-function PunkList({punkListData}) {
+function PunkList({punkListData, setSelectedPunk}) {
     return (
         <>
         <Box sx={styles.punkList}>
             {punkListData.map(punk => (
-                <Box key={punk.token_id}>
+                <Box key={punk.token_id} onClick={() => setSelectedPunk()}>
                     <CollectionCard
                     key={punk.token_id}
                     id={punk.token_id}

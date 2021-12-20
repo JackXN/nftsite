@@ -24,21 +24,20 @@ import Main from '../components/containers/Main/Main';
 // return {
 //   props: {data: data}
 // }
-
 // }
 
 
 
 export default function Home({data}) {
 const [punkListData, setPunkListData] = useState([]);
+const [selectedPunk, setSelectedPunk] = useState(0);
 
 useEffect(() => {
   const getMyData = async () => {
  const openseaData = await axios.get('https://testnets-api.opensea.io/assets?asset_contract_address=0x63886Ddf668ffF226cfEE7415ceF62EA7A28bA8e&order_direction=asc')
  
-//  console.log(openseaData.data.assets)
- console.log(punkListData.data)
  setPunkListData(openseaData.data.assets)
+
   }
 
   getMyData()
@@ -55,7 +54,7 @@ useEffect(() => {
     <Box bg='black'>
     <Header/>
     <Main/>
-   <PunkList punkListData={punkListData}/>
+   <PunkList punkListData={punkListData} setSelectedPunk={setSelectedPunk}/>
 
     </Box>
 

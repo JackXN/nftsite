@@ -17,7 +17,7 @@ function Main() {
         <Box sx={styles.title}>
             BandanaPunk
         </Box>
-        <span className='itemNumber'></span>
+        <span style={{color: '#a1a5b0', fontSize: '72px', alignSelf: 'center'}}>#1</span>
             </Box>
             <Box sx={styles.ownerDetails}>
                 <Box sx={styles.ownerImageContainer}>
