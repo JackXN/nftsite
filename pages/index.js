@@ -10,6 +10,7 @@ import PunkList from '../components/containers/PunkList/PunkList';
 
 // axios
 import axios from 'axios';
+import Main from '../components/containers/Main/Main';
 
 
 
@@ -53,10 +54,9 @@ useEffect(() => {
     </Head>
     <Box bg='black'>
     <Header/>
-    <Box display='flex' margin='50px'>
-
+    <Main/>
    <PunkList punkListData={punkListData}/>
-    </Box>
+
     </Box>
 
     </>
