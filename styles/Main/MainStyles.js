@@ -1,8 +1,6 @@
 const styles = {
 main: {
     maxHeight: '50vh',
-    
-    
 },
 mainContent: {
     display: 'flex',
@@ -62,7 +60,7 @@ ownerDetails: {
 display: 'flex',
 alignItems: 'center',
 },
-ownerAndHandler: {
+ownerNameAndHandle: {
     flex: '1',
 },
 ownerHandle: {
